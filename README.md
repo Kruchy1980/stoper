@@ -13,5 +13,5 @@ Prosty projekt stopera, który liczy sekundy i minuty - bez setnych oraz posiada
 2. Pędzelek pokazuje paletę kolorów, które możesz wybrać, aby zmienić kolor wyświetlania stopera
 
 
-### URL of Prooject
+### URL of Project
 
