@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/bookmark-icon/stoper.svg">
+    <title>Stoper</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Google fonts import - Dancing Script  and Montserat-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/ac750a2c2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <!-- Question mark icon -->
+        <div class="info">
+            <i class="fas fa-paint-brush brush"></i>
+            <i class="fas fa-question q-mark"></i>
+        </div>
+        <!-- The color palette display -->
+        <div class="colors">
+            <div class="color first"></div>
+            <div class="color second"></div>
+            <div class="color third"></div>
+            <div class="color fourth"></div>
+            <div class="color fifth"></div>
+        </div>
+        <!-- Title of our stoper -->
+        <h1 class="title">Stopper</h1>
+        <!-- Our timer -->
+        <p class="stopwatch">0:00</p>
+        <!-- Our time record display -->
+        <p class="time">0:00</p>
+
+        <div class="buttons">
+            <!-- Play -->
+            <button class="play">
+                <i class="fas fa-play"></i>
+            </button>
+            <!-- Pause -->
+            <button class="pause">
+                <i class="fas fa-pause"></i>
+            </button>
+            <!-- Stop -->
+            <button class="stop">
+                <i class="fas fa-stop"></i>
+            </button>
+            <!-- Reset -->
+            <button class="reset">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- History -->
+            <button class="history">History</button>
+        </div>
+        <!-- Records list -->
+        <ul class="times-list hide-history"></ul>
+    </div>
+    <!-- Modal with info -->
+    <div class="modal-shadow">
+        <div class="modal">
+            <button class="close">X</button>
+            <div class="modal-content">
+                <h2 class="instruction">Instruction:</h2>
+                <p><i class="fas fa-play"></i> - start</p>
+                <p><i class="fas fa-pause"></i> - pause</p>
+                <p><i class="fas fa-stop"></i> - stop and add records to history</p>
+                <p><i class="fas fa-times"></i> - clear the history</p>
+                <p class="history-modal"><strong>History</strong> - records history</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
