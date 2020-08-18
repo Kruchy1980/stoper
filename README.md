@@ -5,7 +5,7 @@ Prosty projekt stopera, który liczy sekundy i minuty - bez setnych oraz posiada
 
 ### Instruction
 1. The short instruction is when you click in the **question mark _icon_**
-2.The brush shows you the pallette of colors which you can choose to change the display color of stoper
+2. The brush shows you the pallette of colors which you can choose to change the display color of stoper
 
 ### Instruckcja
 
@@ -14,4 +14,5 @@ Prosty projekt stopera, który liczy sekundy i minuty - bez setnych oraz posiada
 
 
 ### URL of Project
+_https://kruchy1980.github.io/stoper/_
 
