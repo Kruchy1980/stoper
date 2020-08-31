@@ -38,7 +38,7 @@ let minutes = 0;
 // 4. Seconds counter
 let seconds = 0;
 // 5. Miliseconds counter
-let miliSeconds = 0;
+// let miliSeconds = 0;
 // 6. The array for our results
 const resultArray = [];
 

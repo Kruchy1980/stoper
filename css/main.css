@@ -76,14 +76,14 @@ body {
 /* Question mark */
 
 .q-mark {
-    right: 14px;
+    left: 14px;
 }
 
 
 /* Brush */
 
 .brush {
-    right: 40px;
+    right: 14px;
 }
 
 
@@ -313,9 +313,6 @@ body {
 /* Colors separately */
 
 .color {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     width: 30px;
     height: 30px;
     background-color: #ddd;
@@ -330,52 +327,42 @@ body {
 
 .first {
     background-color: #fa1406;
-    /* box-shadow: 0 0 4px 6px var(--first-color); */
 }
 
 .second {
     background-color: #eec81d;
-    /* box-shadow: 0 0 4px 6px var(--second-color); */
 }
 
 .third {
     background-color: #3bcc0f;
-    /* box-shadow: 0 0 4px 6px 3bcc0f; */
 }
 
 .fourth {
     background-color: #1143e7;
-    /* box-shadow: 0 0 4px 6px #0a35c4; */
 }
 
 .fifth {
     background-color: #e712e7;
-    /* box-shadow: 0 0 4px 6px #e712e7; */
 }
 
 .first:hover {
     background-color: #970b03;
-    /* box-shadow: 0 0 4px 6px var(--first-color); */
 }
 
 .second:hover {
     background-color: #867304;
-    /* box-shadow: 0 0 4px 6px var(--second-color); */
 }
 
 .third:hover {
     background-color: #195c05;
-    /* box-shadow: 0 0 4px 6px 3bcc0f; */
 }
 
 .fourth:hover {
     background-color: #02175e;
-    /* box-shadow: 0 0 4px 6px #0a35c4; */
 }
 
 .fifth:hover {
     background-color: #940694;
-    /* box-shadow: 0 0 4px 6px #e712e7; */
 }
 
 
