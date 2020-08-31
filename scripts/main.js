@@ -68,34 +68,46 @@ const startTime = () => {
     // Set timer which will update our timer every milisecond
     countTime = setInterval(() => {
         // Conditions to add the values
-        if (miliSeconds < 9) {
-            miliSeconds++;
-            stopWatch.innerText = `${minutes}:0${seconds}:00${miliSeconds}`;
-        } else if (miliSeconds >= 9 && miliSeconds < 99) {
-            miliSeconds++;
-            stopWatch.innerText = `${minutes}:0${seconds}:0${miliSeconds}`;
-        } else if (miliSeconds >= 99 && miliSeconds < 999) {
-            miliSeconds++;
-            stopWatch.innerText = `${minutes}:0${seconds}:${miliSeconds}`;
-        } else if (miliSeconds >= 999 && seconds < 9) {
-            miliSeconds = 0;
+        if (seconds < 9) {
             seconds++;
-            miliSeconds++;
-            stopWatch.innerText = `${minutes}:${seconds}:${miliSeconds}`;
-        } else if (miliSeconds >= 999 && seconds >= 9 && seconds < 59) {
+            stopWatch.innerText = `${minutes}:0${seconds}`;
+        } else if (seconds >= 9 && seconds < 59) {
             seconds++;
-            miliSeconds = 0
-            miliSeconds++;
-            stopWatch.innerText = `${minutes}:${seconds}:${miliSeconds}`;
-        } else if (miliSeconds >= 999 && seconds >= 59) {
-            miliSeconds = 0;
+            stopWatch.innerText = `${minutes}:${seconds}`;
+        } else if (seconds >= 59) {
             seconds = 0;
-            miliSeconds++
             seconds++;
             minutes++;
-            stopWatch.innerText = `${minutes}:${seconds}:${miliSeconds}`;
+            stopWatch.innerText = `${minutes}:${seconds}:`;
         }
-    }, 1);
+        // if (miliSeconds < 9) {
+        //     miliSeconds++;
+        //     stopWatch.innerText = `${minutes}:0${seconds}:00${miliSeconds}`;
+        // } else if (miliSeconds >= 9 && miliSeconds < 99) {
+        //     miliSeconds++;
+        //     stopWatch.innerText = `${minutes}:0${seconds}:0${miliSeconds}`;
+        // } else if (miliSeconds >= 99 && miliSeconds < 999) {
+        //     miliSeconds++;
+        //     stopWatch.innerText = `${minutes}:0${seconds}:${miliSeconds}`;
+        // } else if (miliSeconds >= 999 && seconds < 9) {
+        //     miliSeconds = 0;
+        //     seconds++;
+        //     miliSeconds++;
+        //     stopWatch.innerText = `${minutes}:${seconds}:${miliSeconds}`;
+        // } else if (miliSeconds >= 999 && seconds >= 9 && seconds < 59) {
+        //     seconds++;
+        //     miliSeconds = 0
+        //     miliSeconds++;
+        //     stopWatch.innerText = `${minutes}:${seconds}:${miliSeconds}`;
+        // } else if (miliSeconds >= 999 && seconds >= 59) {
+        //     miliSeconds = 0;
+        //     seconds = 0;
+        //     miliSeconds++
+        //     seconds++;
+        //     minutes++;
+        //     stopWatch.innerText = `${minutes}:${seconds}:${miliSeconds}`;
+        // }
+    }, 1000);
 };
 
 // 2.Pause function
@@ -109,7 +121,7 @@ const stopAddClearDisplayResults = () => {
     // Display results in our time paragraph
     // Add the text to our display
     time.textContent = `The last Time: ${stopWatch.textContent}`;
-    if (stopWatch.textContent !== '0:00:000') {
+    if (stopWatch.textContent !== '0:00') {
         time.style.visibility = 'visible';
         // Add the result to our result array
         resultArray.push(stopWatch.textContent);
